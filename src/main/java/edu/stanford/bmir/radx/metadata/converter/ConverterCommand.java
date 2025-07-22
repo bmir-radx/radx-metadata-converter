@@ -3,7 +3,6 @@ package edu.stanford.bmir.radx.metadata.converter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.metadatacenter.artifacts.model.core.TemplateInstanceArtifact;
 import org.metadatacenter.artifacts.model.renderer.JsonArtifactRenderer;
-import org.springframework.stereotype.Component;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 import picocli.CommandLine.Option;
@@ -14,7 +13,6 @@ import java.nio.file.Path;
 import java.util.concurrent.Callable;
 
 
-@Component
 @Command(name = "convertMetadataInstances", description = "Convert Metadata Instances in RADx Data Hub to align with update CEDAR template")
 public class ConverterCommand implements Callable<Integer> {
   @Option(names = "--t1", description = "Path to the CEDAR template that the metadata instance is currently aligned with", required = true)
