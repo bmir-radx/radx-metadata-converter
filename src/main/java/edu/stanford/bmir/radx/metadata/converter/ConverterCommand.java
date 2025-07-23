@@ -63,13 +63,15 @@ public class ConverterCommand implements Callable<Integer> {
           .forEach(jsonPath -> {
             try {
               System.err.println("######################### Converting < " + jsonPath + "> ##########################");
-              // Read JSON instance
+              // Read JSON-LD instance
               var instanceArtifact = CedarArtifactGetter.getInstanceArtifact(jsonPath);
               // Convert instance
               var convertedInstance = converter.convert(instanceArtifact);
 
               var missingValuesValidator = new MissingValuesValidator();
               missingValuesValidator.checkMissingValues(instanceArtifact, convertedInstance);
+
+              //TODO validate converted metadata
 
               // Resolve output path
               var relativePath = instancesPath.relativize(jsonPath);
