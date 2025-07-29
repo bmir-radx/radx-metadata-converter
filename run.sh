@@ -3,7 +3,7 @@
 # RADx Metadata Converter - Command Line Application
 # Usage: ./run.sh [arguments]
 
-JAR_FILE="target/radx-metadata-converter-0.0.1-SNAPSHOT-jar-with-dependencies.jar"
+JAR_FILE="target/radx-metadata-converter-0.0.1-SNAPSHOT.jar"
 
 if [ ! -f "$JAR_FILE" ]; then
     echo "JAR file not found. Building the application..."
@@ -11,4 +11,4 @@ if [ ! -f "$JAR_FILE" ]; then
 fi
 
 echo "Running RADx Metadata Converter..."
-java -jar "$JAR_FILE" "$@" 
+java -jar "$JAR_FILE" "$@"
