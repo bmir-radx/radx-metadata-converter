@@ -70,10 +70,11 @@ public class Converter {
     //with schemaName
     templateInstanceArtifactBuilder.withName(SCHEMA_NAME.getValue());
 
+    //with description
+    templateInstanceArtifactBuilder.withDescription(SCHEMA_DESCRIPTION.getValue());
 
-    return templateInstanceArtifactBuilder
-        .withDescription(SCHEMA_DESCRIPTION.getValue())
-        .build();
+
+    return templateInstanceArtifactBuilder.build();
   }
 
   private void buildChildFieldInstances(Map<String, FieldSchemaArtifact>fieldSchemas,

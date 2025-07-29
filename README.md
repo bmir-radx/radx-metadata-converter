@@ -6,34 +6,6 @@ A command line application that converts metadata instances in RADx Data Hub to 
 
 - Java 17 or higher
 
-## Building Dependencies
-
-Before building the application, you must first clone and build the following dependencies locally on the `develop` branch, as they contain the latest updates required for this application:
-
-### 1. Clone and build cedar-parent
-```bash
-git clone https://github.com/metadatacenter/cedar-parent.git
-cd cedar-parent
-git checkout develop
-mvn clean install
-```
-
-### 2. Clone and build cedar-artifact-library
-```bash
-git clone https://github.com/metadatacenter/cedar-artifact-library
-cd cedar-artifact-library
-git checkout develop
-mvn clean install
-```
-
-### 3. Clone and build radx-rad-metadata-compiler
-```bash
-git clone https://github.com/bmir-radx/radx-rad-metadata-compiler
-cd radx-rad-metadata-compiler
-git checkout develop
-mvn clean install
-```
-
 ## Building the Application
 
 Build the application:

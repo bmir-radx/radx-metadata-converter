@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>bmir-radx</groupId>
 	<artifactId>radx-metadata-converter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -37,13 +37,13 @@
 		<dependency>
 			<groupId>org.metadatacenter</groupId>
 			<artifactId>cedar-artifact-library</artifactId>
-			<version>2.7.12-SNAPSHOT</version>
+			<version>2.7.11</version>
 		</dependency>
 
 		<dependency>
 			<groupId>edu.stanford.bmir.radx</groupId>
 			<artifactId>radx-rad-metadata-compiler</artifactId>
-			<version>1.0.4-SNAPSHOT</version>
+			<version>1.0.4</version>
 		</dependency>
 
 		<dependency>
@@ -101,7 +101,7 @@
 					<target>17</target>
 				</configuration>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-assembly-plugin</artifactId>
